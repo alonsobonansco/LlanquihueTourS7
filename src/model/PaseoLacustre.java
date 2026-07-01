@@ -12,6 +12,13 @@ public class PaseoLacustre extends ServicioTuristico {
         setTipoEmbarcacion(tipoEmbarcacion);
     }
 
+    @Override
+    public void mostrarInformacion() {
+        System.out.println(
+                "Hola, soy un paseo, me llamo " + super.getNombre() +
+                        " y duro " + super.getDuracionHoras() + " horas.");
+    }
+
     public String getTipoEmbarcacion() {
         return tipoEmbarcacion;
     }

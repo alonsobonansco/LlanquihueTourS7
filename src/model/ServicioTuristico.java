@@ -1,8 +1,5 @@
 package model;
 
-// Palabra clave abstract: en una clase, no permite instanciar objetos de su tipo.
-// Ej: ServicioTuristico st = new ServicioTuristico("Nombre", duracion); arroja error.
-
 /**
  * Representa la clase genérica de servicios turísticos (superclase) que se ofrecen
  * en la agencia de turismo Llanquihue Tour.
@@ -15,6 +12,9 @@ public abstract class ServicioTuristico {
         setNombre(nombre);
         setDuracionHoras(duracionHoras);
     }
+
+    // Aquí abstract 'obliga' a las subclases a sobrescribir este método
+    public abstract void mostrarInformacion();
 
     public String getNombre() {
         return nombre;

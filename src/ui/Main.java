@@ -7,13 +7,13 @@ import data.GestorServicios;
  * y luego a sus métodos.
  *
  * @author Alonso Bonansco
- * @version 1.1.0
- * @since Semana 6
+ * @version 1.2.0
+ * @since Semana 6 (Actualizado semana 7)
  */
 public class Main {
     public static void main(String[] args) {
         GestorServicios gestorServicios = new GestorServicios();
-        gestorServicios.crearTours();
-        System.out.println(gestorServicios.mostrarTours());
+        gestorServicios.crearListaServicios();
+        gestorServicios.diferenciarServicios();
     }
 }

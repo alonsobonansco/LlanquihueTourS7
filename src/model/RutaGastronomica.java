@@ -12,6 +12,13 @@ public class RutaGastronomica extends ServicioTuristico {
         setNumeroDeParadas(numeroDeParadas);
     }
 
+    @Override
+    public void mostrarInformacion() {
+        System.out.println(
+                "Hola, soy una ruta, me llamo " + super.getNombre() +
+                        " y duro " + super.getDuracionHoras() + " horas.");
+    }
+
     public int getNumeroDeParadas() {
         return numeroDeParadas;
     }

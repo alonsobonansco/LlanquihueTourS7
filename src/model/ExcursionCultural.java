@@ -12,6 +12,13 @@ public class ExcursionCultural extends ServicioTuristico {
         setLugarHistorico(lugarHistorico);
     }
 
+    @Override
+    public void mostrarInformacion() {
+        System.out.println(
+                "Hola, soy una excursión, me llamo " + super.getNombre() +
+                        " y duro " + super.getDuracionHoras() + " horas.");
+    }
+
     public String getLugarHistorico() {
         return lugarHistorico;
     }
