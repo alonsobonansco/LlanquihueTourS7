@@ -2,7 +2,8 @@
 ---  
 Actividad formativa 5 (Semana 7)
 
-### Autor:  
+### Autor:
+
 Alonso Antonio Bonansco Vergara  
 Desarrollo Orientado a Objetos I - 006A  
 Analista Programador Computacional  
@@ -10,17 +11,17 @@ Campus Virtual
 
 ---
 
+### Descripción:
 
-### Descripción:  
-"La agencia necesita un sistema que permita almacenar diferentes 
+"La agencia necesita un sistema que permita almacenar diferentes
 tipos de servicios turísticos en una misma colección. Recorrer y
-mostrar su información. Escalar el sistema de manera flexible, 
-permitiendo integrar nuevas subclases sin modificar el código existente." 
+mostrar su información. Escalar el sistema de manera flexible,
+permitiendo integrar nuevas subclases sin modificar el código existente."
 
 Para solucionar la problemática, dentro de GestorServicios se crean objetos
 de las subclases de ServicioTuristico y se añaden a una List<>. Luego, el
 método recorrerServicios() recorre la lista, diferenciando en tiempo
-real a qué tipo de objeto corresponde (ruta, paseo o excursión) para luego 
+real a qué tipo de objeto corresponde (ruta, paseo o excursión) para luego
 llamar automáticamente al método mostrarInformacion() de cada subclase.
 
 ---
@@ -31,7 +32,7 @@ llamar automáticamente al método mostrarInformacion() de cada subclase.
 📁 src/
 ├── 📁 ui/                              # Punto de entrada de la aplicación
 │   └── 📄 Main.java               
-├── 📁 data/                            # Instancia y muestra los objetos
+├── 📁 data/                            # Instancia y añade los objetos a una lista
 │   └── 📄 GestorServicios.java
 └── 📁 model/                           # Clases del dominio
     ├── 📄 ServicioTuristico.java       - Superclase (nombre, duracionHoras)
@@ -41,7 +42,9 @@ llamar automáticamente al método mostrarInformacion() de cada subclase.
 ```
 
 ---
-### Instrucciones para clonar y ejecutar 
+
+### Instrucciones para clonar y ejecutar
+
 Requisitos del sistema:
 
 * **JDK:** Java 25 (LTS) o superior

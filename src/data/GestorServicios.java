@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Clase encargada de crear los objetos, añadirlos a una lista y mostrarlos.
+ * Clase encargada de crear los objetos, añadirlos a una lista, recorrerla y llamar
+ * al método mostrarInformacion() de cada subclase.
  * ServicioTuristico se puede instanciar como cualquiera de sus subclases (pero no a sí misma
  * porque es abstract).
  */
