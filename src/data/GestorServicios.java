@@ -33,7 +33,7 @@ public class GestorServicios {
                 "Chalet Histórico", 1.5, "Casa Schöbitz"));
     }
 
-    public void mostrarServicios() {
+    public void recorrerServicios() {
         for (ServicioTuristico st : listaServicios) {
             st.mostrarInformacion();
             System.out.println();
