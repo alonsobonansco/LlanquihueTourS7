@@ -15,8 +15,10 @@ public class RutaGastronomica extends ServicioTuristico {
     @Override
     public void mostrarInformacion() {
         System.out.println(
-                "Hola, soy una ruta, me llamo " + super.getNombre() +
-                        " y duro " + super.getDuracionHoras() + " horas.");
+                "=== Ruta Gastronómica ===\n" +
+                        "Nombre: " + super.getNombre() +
+                        " - Duración: " + super.getDuracionHoras() +
+                        " h - Número de Paradas: " + numeroDeParadas);
     }
 
     public int getNumeroDeParadas() {

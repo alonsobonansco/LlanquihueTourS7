@@ -15,8 +15,10 @@ public class PaseoLacustre extends ServicioTuristico {
     @Override
     public void mostrarInformacion() {
         System.out.println(
-                "Hola, soy un paseo, me llamo " + super.getNombre() +
-                        " y duro " + super.getDuracionHoras() + " horas.");
+                "=== Paseo Lacustre ===\n" +
+                        "Nombre: " + super.getNombre() +
+                        " - Duración: " + super.getDuracionHoras() +
+                        " h - Tipo de Embarcación: " + tipoEmbarcacion);
     }
 
     public String getTipoEmbarcacion() {

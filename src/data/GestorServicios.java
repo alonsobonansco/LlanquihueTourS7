@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Clase encargada de crear los objetos y mostrarlos.
+ * Clase encargada de crear los objetos, añadirlos a una lista y mostrarlos.
  * ServicioTuristico se puede instanciar como cualquiera de sus subclases (pero no a sí misma
  * porque es abstract).
  */
@@ -33,9 +33,10 @@ public class GestorServicios {
                 "Chalet Histórico", 1.5, "Casa Schöbitz"));
     }
 
-    public void diferenciarServicios() {
+    public void mostrarServicios() {
         for (ServicioTuristico st : listaServicios) {
             st.mostrarInformacion();
+            System.out.println();
         }
     }
 }
