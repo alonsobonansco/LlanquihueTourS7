@@ -19,6 +19,10 @@ public class GestorServicios {
         this.listaServicios = new ArrayList<>();
     }
 
+    /**
+     * Método que crea objetos de las subclases de ServicioTuristico y los añade
+     * a una lista.
+     */
     public void crearListaServicios() {
         listaServicios.add(new RutaGastronomica(
                 "Ruta de la repostería Alemana", 3, 4));
@@ -34,10 +38,17 @@ public class GestorServicios {
                 "Chalet Histórico", 1.5, "Casa Schöbitz"));
     }
 
+    /**
+     * Método que recorre todos los objetos de la lista ServicioTuristico.
+     * Diferencia automáticamente qué objeto subclase es y llama a su método
+     * mostrarInformacion().
+     */
     public void recorrerServicios() {
         for (ServicioTuristico st : listaServicios) {
             st.mostrarInformacion();
-            System.out.println();
         }
+
+        // Forma alternativa desde Java 8
+        // listaServicios.forEach(ServicioTuristico::mostrarInformacion);
     }
 }

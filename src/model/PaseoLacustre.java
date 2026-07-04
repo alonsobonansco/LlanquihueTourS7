@@ -18,7 +18,7 @@ public class PaseoLacustre extends ServicioTuristico {
                 "=== Paseo Lacustre ===\n" +
                         "Nombre: " + super.getNombre() +
                         " - Duración: " + super.getDuracionHoras() +
-                        " h - Tipo de Embarcación: " + tipoEmbarcacion);
+                        " h - Tipo de Embarcación: " + tipoEmbarcacion + "\n");
     }
 
     public String getTipoEmbarcacion() {

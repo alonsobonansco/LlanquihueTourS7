@@ -18,7 +18,7 @@ public class ExcursionCultural extends ServicioTuristico {
                 "=== Excursión Cultural ===\n" +
                         "Nombre: " + super.getNombre() +
                         " - Duración: " + super.getDuracionHoras() +
-                        " h - Lugar Histórico: " + lugarHistorico);
+                        " h - Lugar Histórico: " + lugarHistorico + "\n");
     }
 
     public String getLugarHistorico() {
